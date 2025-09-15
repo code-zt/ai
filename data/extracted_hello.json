@@ -1,0 +1,8 @@
+[
+  {
+    "path": "/hello",
+    "method": "GET",
+    "parameters": [],
+    "framework": "FASTAPI"
+  }
+]

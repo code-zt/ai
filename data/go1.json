@@ -1,0 +1,14 @@
+[
+  {
+    "path": "/hello",
+    "method": "GET",
+    "parameters": [],
+    "framework": "GO"
+  },
+  {
+    "path": "/hello",
+    "method": "GET",
+    "parameters": [],
+    "framework": "GO"
+  }
+]

@@ -1,35 +1,35 @@
-## Первый запуск
+## OpenAPI 3.0 Spec Generator (BERT-GNN)
 
-1) Установка зависимостей:
-
+### Setup
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-python -c "import nltk; nltk.download('punkt')"
+# Install torch-geometric wheels matching your torch version if desired
 ```
 
-2) Генерация датасета:
-
+### Generate Synthetic Dataset
 ```bash
-python generate_dataset.py
+python -m src.synthesize_data
 ```
 
-3) Обучение:
-
+### Train
 ```bash
-python train_model.py
+python -m src.train
 ```
 
-4) Пример инференса:
-
+### Generate Spec
 ```bash
-python predict.py
+python -m src.generate
 ```
 
-5) Оценка качества (BLEU + валидность JSON):
-
+### Visualize Endpoint Graph
 ```bash
-python evaluate.py
+python -m src.visualize_graph
 ```
+
+Notes:
+- The model integrates BERT encodings with optional GAT-based graph context across endpoints.
+- Training uses a schema-aware loss mixing CE and JSON Schema validation.
+- For GPU, ensure CUDA-enabled torch and matching torch-geometric wheels.
 
 

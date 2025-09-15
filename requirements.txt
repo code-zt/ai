@@ -1,7 +1,13 @@
-transformers>=4.45.0
+transformers==4.46.3
+tokenizers==0.20.3
 torch>=2.2.0
-pytorch-lightning>=2.3.0
-nltk>=3.8.1
-accelerate>=0.31.0
-sentencepiece>=0.2.0
-
+fastjsonschema==2.19.1
+PyYAML==6.0.2
+networkx==3.3
+matplotlib==3.9.0
+numpy>=1.26.0
+scikit-learn>=1.5.0
+pydantic>=2.7.0
+# torch-geometric and its deps are version/platform specific; install via pip wheels
+# Example CPU wheels for torch 2.2:
+# pip install torch-geometric torch-scatter torch-sparse torch-cluster torch-spline-conv -f https://data.pyg.org/whl/torch-2.2.0+cpu.html
